@@ -1,5 +1,3 @@
-local function mkdir()
-    print('mkdir')
+return function(name)
+    print('mkdir '..name)
 end
-
-return mkdir()
