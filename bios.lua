@@ -1,4 +1,4 @@
-local fucntion init(self, cache)
+return fucntion(self, cache)
   local function boot_invoke(file)
     local result = self.run_file(file)
     if not result[1] then
@@ -23,4 +23,3 @@ local fucntion init(self, cache)
   
   self.beep(1000, 0.2)
 end
-return init()
