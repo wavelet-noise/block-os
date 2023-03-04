@@ -1,10 +1,10 @@
 local fucntion init(self, cache)
   local function boot_invoke(file)
-    local result = table.pack(pcall(self.run_file, file, ...))
+    local result = self.run_file(file)
     if not result[1] then
       return nil, result[2]
     else
-      return table.unpack(result, 2, result.n)
+      return table.unpack(result)
     end
   end
 
